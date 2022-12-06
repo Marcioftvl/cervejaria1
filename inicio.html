@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+
+<html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/StyleSheet1.css"/>
+    <title>Cervejaria do Perigres</title>
+    <script>
+        function mensagemResposta() {
+            const url = new window.URLSearchParams(window.location.search)
+            let acesso = url.get('acesso')
+
+            if (acesso === 'sim') {
+                document.getElementById("textoResposta").innerHTML = "Olá! Gostaria de te dar boas vindas a Cervejaria do Pericles.<br>Aqui você encontrará as melhores bebidas do Brasil!"
+            } else {
+                document.getElementById("textoResposta").innerHTML = "Sinto muito, mas este site só é permitido para maiores de 18 anos! :("
+                document.getElementById("botaoEntrar").style.visibility = "hidden";
+            }
+               
+        }
+    </script>
+</head>
+<body onload="mensagemResposta()">
+    <nav id="menus">
+        <ul id="menuPrincipal">
+            <li>A cervejaria</li>
+            <li>Nossas cervejas</li>
+            <li>Delivery</li>
+        </ul>
+        <ul id="menuCarrinho">
+            <li>Meu Carrinho <img src="img/carrinho.png" alt="carrinho" /></li>
+        </ul>
+    </nav>
+
+    <section>
+        <div id="resposta">
+            <img src="img/brindecerveja.png" alt="copos com cerveja" width="70" />
+            <label id="textoResposta"></label>
+        </div>
+    </section>
+
+    <button id="botaoEntrar">Entrar no Site</button>
+   
+
+</body>
+</html>

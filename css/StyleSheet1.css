@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Raleway&display=swap');
+body {
+    background-color: #000000;
+    display: grid;
+}
+
+h1 {
+    color: #FFFFFF;
+    text-align:center;
+    margin-bottom:50px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #FFFFFF;
+}
+
+#perguntaIdade {
+    background-color: #CA7900;
+    border-radius: 15px;
+    height: 100%;
+    display: grid;
+    padding-bottom: 20px;
+    width:80%;
+    margin:auto;
+}
+
+#perguntaIdade img {
+    margin:auto;
+    text-align: center;
+    justify-content: center;
+    margin-top: -25PX;
+}
+
+#perguntaIdade label {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 53px;
+    text-align: center;
+}
+
+.botoes {
+    width:30%;
+    height: 30px;
+    margin:auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.botoes button {
+    width: 100px;
+    color: #F5F5F5;
+    background-color: #CA8500;
+    border: 5px solid #F5F5F5;
+    border-radius: 8px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+    
+}
+
+.botoes :hover {
+    color: black;
+    border: 5px solid black;
+}
+
+#menus {
+    display: flex;
+    background: #CA7900;
+    width: 100%;
+    margin-bottom:100px;
+}
+
+#menuPrincipal, #menuCarrinho {
+    display: flex;
+    margin: auto;
+
+    color: #F5F5F5;
+    list-style: none;
+    text-decoration: none;
+    align-items: center;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 42px;
+}
+#menuCarrinho{
+    margin-right:auto;
+    text-align:right;
+}
+
+#menuCarrinho li{
+   padding-right:40px;
+   text-align:right; 
+   justify-content: normal;
+}
+
+#menuPrincipal li{
+    list-style: none;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+#resposta {
+    color: #FFFFFF;
+    background-color: #CA7900;
+    border-radius: 15px;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    padding-bottom: 20px;
+    width:80%;
+    margin:auto;
+}
+
+#resposta img {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: -25px;
+}
+
+#resposta label {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 42px;
+    align-items: center;
+    text-align: center;
+}
+
+body #botaoEntrar {
+    
+    margin-top:5%;
+    margin-left:auto;
+    margin-right:auto;
+    display: flex;
+    justify-content:center;
+    
+}
+
+#botaoEntrar {
+    width: 180px;
+    color: #F5F5F5;
+    background: #CA8500;
+    border: 5px solid #F5F5F5;
+    border-radius: 8px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+#botaoEntrar :hover {
+    color: black;
+    border: 5px solid black;
+}
+
+#botaoEntrar :hover {
+    color: black;
+    border: 5px solid black;
+}
+
+
+

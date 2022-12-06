@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Cervejaria do Pericles</title>
+    <link rel="stylesheet" href="css/StyleSheet1.css"/>
+
+    <script>
+        function resposta(valor) {
+
+            if (valor === 'sim') {
+                window.location.href = "inicio.html?acesso=sim"
+            } else {
+                window.location.href = "inicio.html?acesso=nao"
+            }
+        }
+        
+    </script>
+
+ </head>
+<body>
+    <section>
+        <h1>Bem vindo à <br>cerveijaria do Pericles Deluvery</h1>
+        
+        <div id="perguntaIdade">
+            <img src="img/brindecerveja.png" alt="copos com cerveja" width="70" />
+            <label>Você é maior de 18 Anos?</label>
+            <div class="botoes">
+                <button onclick="resposta('sim')">SIM</button>
+                <button onclick="resposta('não')">NÃO</button>
+            </div>
+        </div>
+            
+    </section>
+
+</body>
+</html>
